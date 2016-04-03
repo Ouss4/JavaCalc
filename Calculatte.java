@@ -93,7 +93,7 @@ public class Calculatte extends JFrame{
 
 		public void actionPerformed(ActionEvent e) {
 			String str = (((Double.valueOf(resultat.getText()) == 0) | actioned) ?
-														"" : resultat.getText()) + e.getActionCommand();
+							"" : resultat.getText()) + e.getActionCommand();
 			actioned = false;
 			resultat.setText(str);			
 		}
