@@ -12,11 +12,13 @@ public class CalcController implements ControllerInterface{
 		number = "";
 	}
 	
+	@Overrride
 	public void numberClicked(String num){
 		number += num;
 		this.model.notifyNumber(number);
 	}
 	
+	@Overrride
 	public void operatorClicked(String op){
 		if(op == "="){
 			this.model.setSecondNumber(Double.valueOf(number));
